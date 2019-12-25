@@ -1,0 +1,57 @@
+.input {
+  @include make-spacer(p, 0);
+  @include transition(border);
+  @include font-size(16px, 40px);
+
+  display: block;
+  border: 0;
+  border-bottom: 1px solid var(--grey-300);
+  box-shadow: none;
+  background-color: transparent;
+  width: 100%;
+  color: var(--senet-black);
+  font-weight: var(--light);
+
+  &::placeholder {
+    @include font-size(16px, 40px);
+
+    color: var(--grey-300);
+  }
+
+  &.has-error {
+    border-color: var(--red);
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--senet-black);
+  }
+
+  &--textarea {
+    @include make-spacer(px, 2);
+
+    border: 1px solid var(--grey-300);
+    min-height: rem(144px);
+    resize: none;
+  }
+
+  &--inverse {
+    border-color: var(--grey-400);
+    color: var(--grey-200);
+
+    &::placeholder {
+      color: var(--grey-400);
+    }
+
+    &:focus {
+      border-color: var(--grey-300);
+    }
+
+    &.input {
+
+      &--textarea {
+        border-color: var(--grey-400);
+      }
+    }
+  }
+}
