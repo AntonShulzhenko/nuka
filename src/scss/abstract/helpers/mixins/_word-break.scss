@@ -1,7 +1,0 @@
-@mixin word-break($display: block) {
-  display: $display;
-  word-break: break-word;
-  word-wrap: break-word;
-
-  @content;
-}
