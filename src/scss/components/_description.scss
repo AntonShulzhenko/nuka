@@ -1,0 +1,25 @@
+.description {
+  @include make-spacer(mb, 5);
+
+  display: grid;
+  grid-template-columns: repeat(2, rem(280px));
+
+  &__title {
+    @include make-spacer(mb, 0);
+    @include font-size(26px, 32px);
+
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: var(--headings-font-family);
+  }
+
+  &__text {
+    @include font-size(14px, 21px);
+
+    color: var(--grey);
+  }
+
+  &--no-margin {
+    @include make-spacer(mb, 0);
+  }
+}

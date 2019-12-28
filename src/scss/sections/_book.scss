@@ -1,10 +1,14 @@
 .book {
-  height: 2000px;
 
   .section {
 
     &__stuff {
       @include make-spacer(pt, 16);
     }
+  }
+
+  .pattern {
+    top: rem(388px);
+    right: rem(20px);
   }
 }

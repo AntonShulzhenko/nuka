@@ -39,4 +39,10 @@
 // anchorScroll('.sidebar-menu__link', header.getBoundingClientRect().height + headerOffset);
 // anchorScroll('#scroll-to-top', header.getBoundingClientRect().height, true);
 
-console.log('asas');
+import carousel from './components/carousel';
+import stuffCarousel from './components/stuff-carousel';
+import cleanCarousel from './components/clean-carousel';
+
+carousel();
+stuffCarousel();
+cleanCarousel();

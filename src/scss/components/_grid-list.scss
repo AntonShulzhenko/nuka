@@ -1,0 +1,35 @@
+.grid-list {
+  @include make-spacer(mb, 11);
+
+  display: grid;
+  grid-template-columns: repeat(2, rem(280px));
+  grid-column-gap: rem(32px);
+  grid-row-gap: rem(40px);
+
+  &__title {
+    @include font-size(26px, 32px);
+    @include make-spacer(mb, 2);
+
+    font-family: var(--headings-font-family);
+    font-weight: 500;
+    position: relative;
+    padding-left: 10px;
+
+    &::before {
+      @include size(1px, 100%);
+
+      background-color: #C4C4C4;
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+    }
+  }
+
+  &__text {
+    @include font-size(14px, 21px);
+
+    color: var(--grey);
+    font-weight: 400;
+  }
+}

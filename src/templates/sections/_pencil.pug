@@ -1,6 +1,32 @@
 section.section.section--underlined.pencil
   .section__sidebar
     .section__stuff
-      img(src="./img/pencil.png", alt="Nika pencil", class="section__preview")
+      .stuff-carousel(style="--dot-one-color: #232323; --dot-two-color: #8A8A8B; --dot-three-color: #fff; --dot-one-border: #232323; --dot-two-border: #8A8A8B; --dot-three-border: #232323")
+        .stuff-carousel__item
+          img(src="./img/pencil.png", alt="Nika pencil", class="section__preview")
+        .stuff-carousel__item
+          img(src="./img/pencil.png", alt="Nika pencil", class="section__preview")
+        .stuff-carousel__item
+          img(src="./img/pencil.png", alt="Nika pencil", class="section__preview")
 
   .section__content
+    .section__top
+      h2.title
+        span.title__text.title__text--border ETERNAL
+        span.title__text.title__text--fill PENCIL
+
+      .grid-list
+        each column in pencilData
+          .grid-list__column
+            h3.grid-list__title= column.title
+            p.grid-list__text !{column.text}
+
+      .description
+        h3.description__title Different pressure sensitivity
+        p.description__text Press harder for thicker lines, lighter for thinner. And yes, you can wipe off eternal pencil’s writings by nuka magic eraser.
+
+    .section__bottom
+      video(src="./img/video-4.mp4" loop autoplay type="video/mp4" class="video")
+
+  img(src="./img/pattern.svg", class="pattern")
+

@@ -1,10 +1,14 @@
 .pencil {
-  height: 2000px;
 
   .section {
 
     &__stuff {
       @include make-spacer(pt, 11);
     }
+  }
+
+  .pattern {
+    top: rem(124px);
+    right: rem(112px);
   }
 }

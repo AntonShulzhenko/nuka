@@ -3,4 +3,30 @@ section.section.section--underlined.app
     .section__stuff
       img(src="./img/app.png", alt="Nika app", class="section__preview")
 
+      .app__download
+        a.app__link.app__link--google(href="#")
+          img(src="./img/google-app.png", alt="")
+        a.app__link.app__link--apple(href="#")
+          img(src="./img/apple-app.png", alt="")
+
   .section__content
+    .section__top
+      h2.title
+        span.title__text.title__text--border NUKA
+        span.title__text.title__text--fill APPLICATION
+
+      .grid-list
+        each column in appData
+          .grid-list__column
+            h3.grid-list__title= column.title
+            p.grid-list__text !{column.text}
+
+      .description
+        h3.description__title Different pressure sensitivity
+        p.description__text Perfect extension of the eternal notebook on your phone. Scan the page with nuka app and get digital handwritten notes of good quality.
+
+    .section__bottom
+      img(src="https://res.cloudinary.com/nuka-me/image/upload/v1560251422/nuka_app.gif", alt="", class="gif")
+      //video(src="./img/video-4.mp4" loop autoplay type="video/mp4" class="video")
+
+    img(src="./img/pattern.svg", class="pattern")

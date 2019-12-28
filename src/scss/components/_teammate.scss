@@ -1,0 +1,12 @@
+.teammate {
+  @include flex($align-items: center);
+
+  &__name {
+    @include make-spacer(mb, 0);
+    @include font-size(26px, 32px);
+
+    font-family: var(--headings-font-family);
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+}

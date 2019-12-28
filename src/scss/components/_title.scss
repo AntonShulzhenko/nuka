@@ -1,0 +1,24 @@
+.title {
+  @include flex(flex-start, center);
+  @include font-size(50px, 60px);
+  @include make-spacer(mb, 8);
+
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: var(--headings-font-family);
+
+  &__text {
+
+    &--border {
+      @include make-spacer(mr, half);
+
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--almost-black);
+    }
+
+    &--fill {
+      color: var(--blue);
+    }
+  }
+}

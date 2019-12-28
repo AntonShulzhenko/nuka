@@ -1,10 +1,26 @@
 .app {
-  height: 2000px;
+
+  &__download {
+    @include flex(center, center);
+
+    width: 100%;
+  }
+
+  &__link {
+    @include make-spacer(mx, 1);
+
+    display: block;
+  }
 
   .section {
 
     &__stuff {
       @include make-spacer(pt, 16);
     }
+  }
+
+  .pattern {
+    top: rem(280px);
+    right: rem(134px);
   }
 }

@@ -1,6 +1,28 @@
 section.section.section--underlined.spray
   .section__sidebar
     .section__stuff
-      img(src="./img/spray.png", alt="Nika spray", class="section__preview")
+      .clean-carousel
+        .clean-carousel__item
+          img(src="./img/spray_1.png", alt="Nika spray", class="section__preview")
+        .clean-carousel__item
+          img(src="./img/wipe.png", alt="Nika spray", class="section__preview")
 
   .section__content
+    .section__top
+      h2.title
+        span.title__text.title__text--border WIPE
+        span.title__text.title__text--fill OFF ALL
+
+      .grid-list
+        .grid-list__column
+          h3.grid-list__title Rewritable
+          p.grid-list__text Self-developed non-toxic liquid is available in 2 forms: wet wipe & spray can.
+
+      .description
+        h3.description__title Completely rewritable
+        p.description__text Write, erase, and write again and again on the same page with any type of pen, pencil or marker. Make the slightest of motions and all inscription will fully disappear thanks to nuka magic eraser.
+
+    .section__bottom
+      video(src="./img/video-4.mp4" loop autoplay type="video/mp4" class="video")
+
+    img(src="./img/pattern.svg", class="pattern")

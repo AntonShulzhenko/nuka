@@ -1,6 +1,43 @@
 section.section.section--underlined.book
   .section__sidebar
     .section__stuff
-      img(src="./img/book.png", alt="Nika book", class="section__preview")
+      .stuff-carousel(style="--dot-one-color: #232323; --dot-two-color: #fff; --dot-one-border: #232323; --dot-two-border: #232323;")
+        .stuff-carousel__item
+          img(src="./img/book_black.png", alt="Nika book", class="section__preview")
+        .stuff-carousel__item
+          img(src="./img/book_w.png", alt="Nika book", class="section__preview")
 
   .section__content
+    .section__top
+      h2.title
+        span.title__text.title__text--border ETERNAL
+        span.title__text.title__text--fill NOTEBOOK
+
+      .grid-list
+        each column in bookData
+          .grid-list__column
+            h3.grid-list__title= column.title
+            p.grid-list__text= column.text
+
+    .section__bottom
+      .carousel#carousel
+        .carousel__item
+          .carousel__content
+            .description.description--no-margin
+              h3.description__title Tear resistant paper
+              p.description__text Next generation paper which you won't be able to tear. Because of the quality, the notebook is durable and stays as new for a long time.
+          video(src="./img/video-1.webm" loop autoplay type="video/webm" class="carousel__video")
+        .carousel__item
+          .carousel__content
+            .description.description--no-margin
+              h3.description__title Tear resistant paper
+              p.description__text Next generation paper which you won't be able to tear. Because of the quality, the notebook is durable and stays as new for a long time.
+          video(src="./img/video-2.mp4" loop autoplay type="video/mp4" class="carousel__video")
+        .carousel__item
+          .carousel__content
+            .description.description--no-margin
+              h3.description__title Tear resistant paper
+              p.description__text Next generation paper which you won't be able to tear. Because of the quality, the notebook is durable and stays as new for a long time.
+          video(src="./img/video-3.mp4" loop autoplay type="video/mp4" class="carousel__video")
+
+  img(src="./img/pattern.svg", class="pattern")

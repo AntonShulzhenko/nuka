@@ -1,0 +1,22 @@
+.team {
+  @include make-spacer(py, 12);
+
+  width: 100%;
+
+  &__list {
+    @include make-spacer(mt, 7);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: rem(400px) rem(368px);
+    grid-column-gap: rem(100px);
+  }
+
+  &__p {
+    @include make-spacer(mb, 3);
+    @include font-size(14px, 21px);
+
+    color: var(--grey);
+  }
+}

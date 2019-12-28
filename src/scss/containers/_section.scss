@@ -1,7 +1,31 @@
 .section {
   width: 100%;
-  min-height: 100vh;
   position: relative;
+
+  &::before,
+  &::after {
+    @include size(rem(84px), rem(58px));
+
+    display: block;
+    position: absolute;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    content: '';
+  }
+
+  &::before {
+    top: rem(105px);
+    right: rem(205px);
+    background-image: url('../../img/nu-bg.svg');
+  }
+
+  &::after {
+    top: rem(162px);
+    right: rem(130px);
+    background-image: url('../../img/ka-bg.svg');
+  }
 
   &__sidebar {
     @include size(100%);
@@ -24,9 +48,49 @@
     display: block;
   }
 
+  &__content {
+    @include make-spacer(pt, 12);
+
+    width: 100%;
+  }
+
+  &__top {
+    @include make-spacer(pl, 12);
+  }
+
+  &__bottom {
+    width: 100%;
+  }
+
   &--underlined {
     display: grid;
-    grid-template-columns: rem(435px) 1fr;
+    grid-template-columns: rem(435px) calc(100% - #{rem(435px)});
     border-bottom: 1px solid var(--almost-black);
   }
+
+  &--no-bg {
+
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.video {
+  width: 100%;
+  margin-bottom: -8px;
+}
+
+.gif {
+  @include make-spacer(ml, 12);
+
+  display: block;
+}
+
+.pattern {
+  @include size(rem(250px));
+
+  position: absolute;
+  z-index: 90;
 }

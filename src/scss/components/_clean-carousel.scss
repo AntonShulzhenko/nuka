@@ -1,0 +1,50 @@
+.clean-carousel {
+
+  .slick-dots {
+    @include flex(center, center);
+    @include make-spacer(mt, 7);
+
+    bottom: 0;
+
+    > li {
+      @include size(46px, 21px);
+
+      font-size: 0;
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        @include absolute-center;
+        @include transition(#{border-color, opacity});
+        @include font-size(14px, 21px);
+
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        opacity: 0.5;
+      }
+
+      &:nth-of-type(1) {
+        @include make-spacer(mr, 2);
+
+        &::before {
+          content: 'Spray';
+        }
+      }
+
+      &:nth-of-type(2) {
+
+        &::before {
+          content: 'Whipe';
+        }
+      }
+
+      &.slick-active {
+
+        &::before {
+          border-color: var(--red);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

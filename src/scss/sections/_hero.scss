@@ -2,6 +2,7 @@
   @include flex(flex-end, center, column);
   @include make-spacer(pb, 5);
 
+  min-height: 720px;
   position: relative;
   background-color: var(--almost-black);
 
@@ -20,6 +21,7 @@
     text-transform: uppercase;
     position: absolute;
     font-family: var(--headings-font-family);
+    font-weight: 500;
 
     &--eternal {
       color: transparent;

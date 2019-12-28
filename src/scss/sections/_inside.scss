@@ -1,0 +1,15 @@
+.inside {
+
+  &__img {
+    @include make-spacer(ml, 12);
+
+    display: block;
+  }
+
+  .section {
+
+    &__stuff {
+      height: auto;
+    }
+  }
+}

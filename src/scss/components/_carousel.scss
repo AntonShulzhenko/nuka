@@ -1,0 +1,38 @@
+.carousel {
+  position: relative;
+
+  &__content {
+    @include make-spacer(mb, 7);
+    @include make-spacer(pl, 12);
+  }
+
+  &__arrow {
+    position: absolute;
+    top: rem(100px);
+    left: 0;
+    z-index: 50;
+
+    &--prev {
+      left: rem(100px);
+    }
+
+    &--next {
+      left: rem(132px);
+    }
+  }
+
+  &__video {
+    width: 100%;
+    margin-bottom: -8px;
+  }
+
+  &--inside {
+
+    .carousel {
+
+      &__arrow {
+        top: rem(60px);
+      }
+    }
+  }
+}

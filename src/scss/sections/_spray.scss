@@ -1,10 +1,14 @@
 .spray {
-  height: 2000px;
 
   .section {
 
     &__stuff {
       @include make-spacer(pt, 16);
     }
+  }
+
+  .pattern {
+    top: rem(132px);
+    right: rem(245px);
   }
 }
