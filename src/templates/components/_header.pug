@@ -1,2 +1,8 @@
 header.header
-  p Header
+  .container.header__container
+    .header__left
+      img(src="./img/logo.svg", alt="Nuka", class="logo")
+
+      include ../components/_nav
+
+    include ../components/_nav-cta

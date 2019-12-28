@@ -1,12 +1,12 @@
 @import '../helpers/index';
-@import 'fonts';
+@import '../../base/fonts';
 
 //
 // Fonts
 //
 
-$regular-font: 'Roboto';
-$heading-font: 'Raleway';
+$regular-font: 'Din';
+$heading-font: 'Druk';
 $fallback-fonts-list: ('Helvetica', 'Arial', sans-serif);
 $regular-fonts-list: prepend($fallback-fonts-list, $regular-font);
 $heading-fonts-list: prepend($fallback-fonts-list, $heading-font);

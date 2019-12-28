@@ -1,0 +1,32 @@
+.section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+
+  &__sidebar {
+    @include size(100%);
+
+    position: relative;
+    border-right: 1px solid var(--almost-black);
+  }
+
+  &__stuff {
+    @include size(100%, rem(700px));
+
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  &__preview {
+    @include make-spacer(mx, auto);
+
+    display: block;
+  }
+
+  &--underlined {
+    display: grid;
+    grid-template-columns: rem(435px) 1fr;
+    border-bottom: 1px solid var(--almost-black);
+  }
+}

@@ -11,7 +11,7 @@
     }
   }
 
-  &__link {
+  &__anchor {
     @include font-size(14px, 21px);
 
     display: inline-block;
@@ -34,19 +34,6 @@
 
       &::after {
         transform: scaleX(1);
-      }
-    }
-  }
-
-  &--cta {
-
-    .nav {
-
-      &__link {
-
-        &:not(:last-child) {
-          @include make-spacer(mr, 5);
-        }
       }
     }
   }

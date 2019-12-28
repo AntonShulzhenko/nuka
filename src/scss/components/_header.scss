@@ -1,4 +1,24 @@
 .header {
-  background-color: green;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: var(--almost-black);
+
+  &__container {
+    @include flex(space-between, center);
+
+    height: rem(94px);
+  }
+
+  &__left {
+    @include flex($align-items: baseline);
+  }
 }
 
+.logo {
+  @include make-spacer(mr, 16);
+
+  display: block;
+}

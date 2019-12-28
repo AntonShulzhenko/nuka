@@ -1,0 +1,6 @@
+.container {
+  @include make-spacer(mx, auto);
+
+  width: 100%;
+  max-width: rem(1170px);
+}

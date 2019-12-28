@@ -1,0 +1,5 @@
+nav.nav
+  ul.nav__list
+    each anchor in nav
+      li.nav__item
+        a(class="nav__link", href=`#${anchor.id}`)= anchor.text
