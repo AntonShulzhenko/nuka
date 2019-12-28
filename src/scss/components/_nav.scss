@@ -11,33 +11,6 @@
     }
   }
 
-  &__link {
-    @include font-size(14px, 21px);
-
-    display: inline-block;
-    font-weight: var(--bold);
-    text-decoration: none;
-    color: var(--white);
-
-    &::after {
-      @include size(100%, 1px);
-      @include transition(transform);
-
-      display: block;
-      background-color: var(--white);
-      transform: scaleX(0);
-      transform-origin: left center;
-      content: '';
-    }
-
-    &:hover {
-
-      &::after {
-        transform: scaleX(1);
-      }
-    }
-  }
-
   &--cta {
 
     .nav {

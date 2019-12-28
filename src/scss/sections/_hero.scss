@@ -1,3 +1,71 @@
 .hero {
+  @include flex(flex-end, center, column);
+  @include make-spacer(pb, 5);
+
+  position: relative;
   background-color: var(--almost-black);
+
+  &__content {
+    @include absolute-center;
+    @include size(rem(1170px), rem(528px));
+  }
+
+  &__bg {
+    @include absolute-center;
+  }
+
+  &__text {
+    @include font-size(200px, 258px);
+
+    text-transform: uppercase;
+    position: absolute;
+    font-family: var(--headings-font-family);
+
+    &--eternal {
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--white);
+      top: rem(52px);
+      left: rem(-10px);
+    }
+
+    &--stationery {
+      color: var(--blue);
+      left: rem(190px);
+      bottom: rem(45px);
+    }
+  }
+
+  &__footer {
+    @include flex(space-between, center);
+
+    width: 100%;
+  }
+
+  &__press-kit {
+    @include font-size(14px, 21px);
+
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__play-btn {
+    @include flex(flex-start, flex-start);
+    @include font-size(14px, 21px);
+
+    text-transform: uppercase;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  &__play-icon {
+    @include make-spacer(ml, half);
+
+    display: block;
+  }
 }

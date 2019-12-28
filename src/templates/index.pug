@@ -7,34 +7,11 @@ block content
   main
     include components/_header
 
-    section.section.hero
-      h1 Hello Nuka!!!
+    include sections/_hero
+    include sections/_book
+    include sections/_pencil
+    include sections/_spray
+    include sections/_app
+    include sections/_team
 
-    section.section.section--underlined.book
-      .section__sidebar
-        .section__stuff
-          img(src="./img/book.png", alt="Nika book", class="section__preview")
-
-      .section__content
-
-    section.section.section--underlined.pencil
-      .section__sidebar
-        .section__stuff
-          img(src="./img/pencil.png", alt="Nika pencil", class="section__preview")
-
-      .section__content
-
-    section.section.section--underlined.spray
-      .section__sidebar
-        .section__stuff
-          img(src="./img/spray.png", alt="Nika spray", class="section__preview")
-
-      .section__content
-
-    section.section.section--underlined.app
-      .section__sidebar
-        .section__stuff
-          img(src="./img/app.png", alt="Nika app", class="section__preview")
-
-      .section__content
-
+    include components/_footer
