@@ -13,7 +13,6 @@
     <meta name="twitter:card" content="./img/og-image.jpg">
     <meta name="description" content="description">
     <meta name="keywords" content="keywords">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Roboto+Condensed:700|Roboto:300,400,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" media="all" href="./css/app.css">
     <link rel="apple-touch-icon" href="./img/apple-icon-180x180.png" sizes="180x180" type="image/png">
     <link rel="apple-touch-icon" href="./img/apple-icon-152x152.png" sizes="152x152" type="image/png">
@@ -40,9 +39,293 @@
     <meta name="msapplication-TileImage" content="ms-icon-310x310.png">
   </head>
   <body>
-    <!--include ../components/_header-->
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__left"><img class="logo" src="./img/logo.svg" alt="Nuka">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item"><a class="nav__link link link--uppercase" href="#notebook">Notebook</a></li>
+              <li class="nav__item"><a class="nav__link link link--uppercase" href="#pencil">Pencil</a></li>
+              <li class="nav__item"><a class="nav__link link link--uppercase" href="#app">Nuka app</a></li>
+            </ul>
+          </nav>
+        </div>
+        <nav class="nav nav--cta"><a class="nav__link link link--uppercase" href="https://www.indiegogo.com/projects/nuka-eternal-stationery#/" target="_blank" rel="noreferrer noopener">INDIEGOGO</a><a class="nav__link link link--uppercase" href="https://www.kickstarter.com/projects/nuka/eternal-stationery" target="_blank" rel="noreferrer noopener">KICKSTARTER</a><a class="nav__link link link--uppercase" href="mailto:nuka@gmail.com" target="_blank" rel="noreferrer noopener">E-MAIL</a></nav>
+      </div>
+    </header>
     <main>
-      <h1>Hello Nuka!!!</h1>
+      <section class="section hero">
+        <div class="hero__content"><img class="hero__bg" src="./img/hero-bg.png" alt="ETERNAL STATIONERY">
+          <p class="hero__text hero__text--eternal">ETERNAL</p>
+          <p class="hero__text hero__text--stationery">STATIONERY</p>
+        </div>
+        <div class="container">
+          <div class="hero__footer"><button class="hero__play-btn" type="button">Video<img class="hero__play-icon" src="./img/play-btn.svg" alt=""></button><a class="link link--uppercase" href="#">Press Kit</a></div>
+        </div>
+      </section>
+      <section class="section section--underlined book" id="notebook">
+        <div class="section__sidebar">
+          <div class="section__stuff">
+            <div class="stuff-carousel" style="--dot-one-color: #232323; --dot-two-color: #fff; --dot-one-border: #232323; --dot-two-border: #232323;">
+              <div class="stuff-carousel__item"><img class="section__preview" src="./img/book-dark-grey.png" alt="Nika book"></div>
+              <div class="stuff-carousel__item"><img class="section__preview" src="./img/book-light-grey.png" alt="Nika book"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section__content">
+          <div class="section__top">
+            <h2 class="title"><span class="title__text title__text--border">ETERNAL</span><span class="title__text title__text--fill">NOTEBOOK</span></h2>
+            <div class="grid-list">
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Rewritable</h3>
+                <p class="grid-list__text">The notebook will never be overloaded with unnecessary information</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Magnetic</h3>
+                <p class="grid-list__text">The Pencil can be attached to the Notebook thanks to a special built-in mechanism</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Synchronized</h3>
+                <p class="grid-list__text">Your records can be digitalized and synchronized with smart devices</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Strong</h3>
+                <p class="grid-list__text">No torn pages or broken leads.</p>
+              </div>
+            </div>
+          </div>
+          <div class="section__bottom">
+            <div class="carousel" id="carousel">
+              <div class="carousel__item">
+                <div class="carousel__content">
+                  <div class="description description--no-margin">
+                    <h3 class="description__title">Tear resistant paper</h3>
+                    <p class="description__text">Next generation paper which you won't be able to tear. Because of the quality, the notebook is durable and stays as new for a long time.</p>
+                  </div>
+                </div><video class="carousel__video" src="./img/video-1.webm" loop autoplay type="video/webm"></video>
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__content">
+                  <div class="description description--no-margin">
+                    <h3 class="description__title">Tear resistant paper</h3>
+                    <p class="description__text">Next generation paper which you won't be able to tear. Because of the quality, the notebook is durable and stays as new for a long time.</p>
+                  </div>
+                </div><video class="carousel__video" src="./img/video-2.mp4" loop autoplay type="video/mp4"></video>
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__content">
+                  <div class="description description--no-margin">
+                    <h3 class="description__title">Tear resistant paper</h3>
+                    <p class="description__text">Next generation paper which you won't be able to tear. Because of the quality, the notebook is durable and stays as new for a long time.</p>
+                  </div>
+                </div><video class="carousel__video" src="./img/video-3.mp4" loop autoplay type="video/mp4"></video>
+              </div>
+            </div>
+          </div>
+        </div><img class="pattern" src="./img/pattern.svg">
+      </section>
+      <section class="section section--underlined pencil" id="pencil">
+        <div class="section__sidebar">
+          <div class="section__stuff">
+            <div class="stuff-carousel" style="--dot-one-color: #232323; --dot-two-color: #fff; --dot-one-border: #232323; --dot-two-border: #232323;">
+              <div class="stuff-carousel__item"><img class="section__preview" src="./img/pen-dark.png" alt="Nika pencil"></div>
+              <div class="stuff-carousel__item"><img class="section__preview" src="./img/pen-light.png" alt="Nika pencil"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section__content">
+          <div class="section__top">
+            <h2 class="title"><span class="title__text title__text--border">ETERNAL</span><span class="title__text title__text--fill">PENCIL</span></h2>
+            <div class="grid-list">
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Clean</h3>
+                <p class="grid-list__text">No ink leaks, so no dirty<br> hands</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Extreme</h3>
+                <p class="grid-list__text">Highly durable for any<br> environment</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Infinite</h3>
+                <p class="grid-list__text">No lead refill or sharpening<br> needed</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Strong</h3>
+                <p class="grid-list__text">No broken leads</p>
+              </div>
+            </div>
+            <div class="description">
+              <h3 class="description__title">Different pressure sensitivity</h3>
+              <p class="description__text">Press harder for thicker lines, lighter for thinner. And yes, you can wipe off eternal pencil’s writings by nuka magic eraser.</p>
+            </div>
+          </div>
+          <div class="section__bottom"><video class="video" src="./img/video-4.mp4" loop autoplay type="video/mp4"></video></div>
+        </div><img class="pattern" src="./img/pattern.svg">
+      </section>
+      <section class="section section--underlined spray">
+        <div class="section__sidebar">
+          <div class="section__stuff">
+            <div class="clean-carousel">
+              <div class="clean-carousel__item"><img class="section__preview" src="./img/spray.png" alt="Nika spray"></div>
+              <div class="clean-carousel__item"><img class="section__preview" src="./img/whipe.png" alt="Nika spray"></div>
+            </div>
+          </div>
+        </div>
+        <div class="section__content">
+          <div class="section__top">
+            <h2 class="title"><span class="title__text title__text--border">WIPE</span><span class="title__text title__text--fill">OFF ALL</span></h2>
+            <div class="grid-list">
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Rewritable</h3>
+                <p class="grid-list__text">Self-developed non-toxic liquid is available in 2 forms: wet wipe & spray can.</p>
+              </div>
+            </div>
+            <div class="description">
+              <h3 class="description__title">Completely rewritable</h3>
+              <p class="description__text">Write, erase, and write again and again on the same page with any type of pen, pencil or marker. Make the slightest of motions and all inscription will fully disappear thanks to nuka magic eraser.</p>
+            </div>
+          </div>
+          <div class="section__bottom"><video class="video" src="./img/video-4.mp4" loop autoplay type="video/mp4"></video></div><img class="pattern" src="./img/pattern.svg">
+        </div>
+      </section>
+      <section class="section section--underlined app" id="app">
+        <div class="section__sidebar">
+          <div class="section__stuff"><img class="section__preview" src="./img/app.png" alt="Nika app">
+            <div class="app__download"><a class="app__link app__link--google" href="#"><img class="app__img" src="./img/google-store.jpg" alt=""></a><a class="app__link app__link--apple" href="#"><img class="app__img" src="./img/appstore.jpg" alt=""></a></div>
+          </div>
+        </div>
+        <div class="section__content">
+          <div class="section__top">
+            <h2 class="title"><span class="title__text title__text--border">NUKA</span><span class="title__text title__text--fill">APPLICATION</span></h2>
+            <div class="grid-list">
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Synchronize</h3>
+                <p class="grid-list__text">Synchronize To-Do list<br> with your smartphone</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Unlimited</h3>
+                <p class="grid-list__text">Unlimited number of digital<br> notebooks</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Scan</h3>
+                <p class="grid-list__text">Scan your notes and<br> digitalized them</p>
+              </div>
+              <div class="grid-list__column">
+                <h3 class="grid-list__title">Protected</h3>
+                <p class="grid-list__text">Keep your infomation<br> protected</p>
+              </div>
+            </div>
+            <div class="description">
+              <h3 class="description__title">Different pressure sensitivity</h3>
+              <p class="description__text">Perfect extension of the eternal notebook on your phone. Scan the page with nuka app and get digital handwritten notes of good quality.</p>
+            </div>
+          </div>
+          <div class="section__bottom"><img class="gif" src="https://res.cloudinary.com/nuka-me/image/upload/v1560251422/nuka_app.gif" alt="">
+            <!--video(src="./img/video-4.mp4" loop autoplay type="video/mp4" class="video")-->
+          </div><img class="pattern" src="./img/pattern.svg">
+        </div>
+      </section>
+      <section class="section section--underlined section--no-bg inside">
+        <div class="section__sidebar">
+          <div class="section__stuff"><img class="section__preview" src="./img/wi-img.jpg" alt="Nika book"></div>
+        </div>
+        <div class="section__content">
+          <div class="section__top">
+            <h2 class="title"><span class="title__text title__text--border">WHAT</span><span class="title__text title__text--fill">INSIDE</span></h2>
+          </div>
+          <div class="section__bottom">
+            <div class="carousel carousel--inside">
+              <div class="carousel__item">
+                <div class="carousel__content">
+                  <div class="description description--no-margin">
+                    <h3 class="description__title">Planner</h3>
+                    <p class="description__text">Plan your month, erase and plan again. Unlimited times.</p>
+                  </div>
+                </div><img class="inside__img" src="./img/planner.png">
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__content">
+                  <div class="description description--no-margin">
+                    <h3 class="description__title">Planner</h3>
+                    <p class="description__text">Plan your month, erase and plan again. Unlimited times.</p>
+                  </div>
+                </div><img class="inside__img" src="./img/planner.png">
+              </div>
+              <div class="carousel__item">
+                <div class="carousel__content">
+                  <div class="description description--no-margin">
+                    <h3 class="description__title">Planner</h3>
+                    <p class="description__text">Plan your month, erase and plan again. Unlimited times.</p>
+                  </div>
+                </div><img class="inside__img" src="./img/planner.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section--no-sidebar-border section--underlined team">
+        <div class="section__sidebar"></div>
+        <div class="container">
+          <div class="section__top">
+            <h2 class="title"><span class="title__text title__text--border">OUR</span><span class="title__text title__text--fill">TEAM</span></h2>
+          </div>
+          <div class="team__grid">
+            <div class="team__list">
+              <div class="teammate">
+                <figure class="teammate__avatar"><img class="teammate__img" src="./img/nik.jpg" alt=""></figure>
+                <h3 class="teammate__name">Nikita vladykin</h3>
+              </div>
+              <div class="teammate">
+                <figure class="teammate__avatar"><img class="teammate__img" src="./img/eug.jpg" alt=""></figure>
+                <h3 class="teammate__name">EUGENE SHYLO</h3>
+              </div>
+              <div class="teammate">
+                <figure class="teammate__avatar"><img class="teammate__img" src="./img/kate.jpg" alt=""></figure>
+                <h3 class="teammate__name">kate mykhalko</h3>
+              </div>
+            </div>
+            <div class="team__content">
+              <p class="team__p">Hello! We are creators of nuka. All of us have used stationery for years, so we know all benefits and problems related to it.</p>
+              <p class="team__p">We saw advantages of digital notes but realized: nothing can replace the tactile experience of real materials. So, we decided to add modern technologies to stationery, and created radically new things – eternal notebook and pencil.</p>
+              <p class="team__p">Fired by this idea, we left school and started focusing only on nuka. Together with our partners, we have worked for 2 years to tailor business strategy, finalize technologies, work on prototypes and run production in China. Hope you are ready to change habitual things together with us.</p>
+              <p class="team__p">Let’s start!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__grid"><img class="logo" src="./img/logo.svg" alt="Nuka">
+            <div class="footer__column">
+              <h3 class="footer__title">Social Media</h3>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link link" href="#">INSTEGRAM</a></li>
+                <li class="footer__item"><a class="footer__link link" href="#">FACEBOOK</a></li>
+                <li class="footer__item"><a class="footer__link link" href="#">TWITTER</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__title">PARTNERSHIP</h3>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link link" href="#">Concepter</a></li>
+                <li class="footer__item"><a class="footer__link link" href="#">Biosphere Startup Platform</a></li>
+                <li class="footer__item"><a class="footer__link link" href="#">SILA</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__title">Donate</h3>
+              <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link link" href="https://www.kickstarter.com/projects/nuka/eternal-stationery">KICKSTARTER</a></li>
+                <li class="footer__item"><a class="footer__link link" href="https://www.indiegogo.com/projects/nuka-eternal-stationery#/">INDIEGOGO</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__copy">
+            <p class="footer__text">©2019 - NUKA</p>
+            <p class="footer__text">by Natalia Shulzhenko</p>
+          </div>
+        </div><img class="pattern" src="./img/pattern.svg">
+      </footer>
     </main>
     <script src="./js/app.js"></script>
   </body>
