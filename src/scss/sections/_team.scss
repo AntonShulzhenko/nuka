@@ -1,16 +1,17 @@
 .team {
-  @include make-spacer(py, 12);
+  @include make-spacer(pt, 6);
+  @include make-spacer(pb, 12);
 
   width: 100%;
-
-  &__list {
-    @include make-spacer(mt, 7);
-  }
 
   &__grid {
     display: grid;
     grid-template-columns: rem(400px) rem(368px);
-    grid-column-gap: rem(100px);
+    grid-column-gap: rem(50px);
+  }
+
+  &__content {
+    @include make-spacer(mt, 5);
   }
 
   &__p {

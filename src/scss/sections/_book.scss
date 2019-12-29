@@ -3,7 +3,7 @@
   .section {
 
     &__stuff {
-      @include make-spacer(pt, 16);
+      @include make-spacer(pt, 10);
     }
   }
 

@@ -2,6 +2,7 @@
 
   &__download {
     @include flex(center, center);
+    @include make-spacer(mt, 6);
 
     width: 100%;
   }
@@ -12,10 +13,16 @@
     display: block;
   }
 
+  &__img {
+    display: block;
+    max-width: rem(128px);
+  }
+
   .section {
 
     &__stuff {
       @include make-spacer(pt, 16);
+      @include make-spacer(pb, 4);
     }
   }
 

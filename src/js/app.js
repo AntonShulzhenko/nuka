@@ -8,7 +8,11 @@
 // import scrollPriceToCenter from './components/scroll-price-to-center'
 // import dropdown from './components/dropdown'
 // import footerSpoiler from './components/footer-spoiler'
-// import anchorScroll from './components/anchor-scroll'
+import anchorScroll from './components/anchor-scroll'
+
+import carousel from './components/carousel';
+import stuffCarousel from './components/stuff-carousel';
+import cleanCarousel from './components/clean-carousel';
 //
 // menu();
 // tabs('.price-section__tab', '.price-section__content');
@@ -25,8 +29,6 @@
 //
 // countryPhoneSelect('#tel', '#tel-input-field');
 //
-// const header = document.querySelector('.header');
-// const headerOffset = 16
 
 // if(document.getElementById('spy')) {
 //   const spy = new Gumshoe('#spy a', {
@@ -35,13 +37,12 @@
 //     }
 //   });
 // }
-
-// anchorScroll('.sidebar-menu__link', header.getBoundingClientRect().height + headerOffset);
 // anchorScroll('#scroll-to-top', header.getBoundingClientRect().height, true);
 
-import carousel from './components/carousel';
-import stuffCarousel from './components/stuff-carousel';
-import cleanCarousel from './components/clean-carousel';
+const header = document.querySelector('.header');
+// const headerOffset = 16;
+// anchorScroll('.nav__link', header.getBoundingClientRect().height + headerOffset);
+anchorScroll('.nav__link', header.getBoundingClientRect().height);
 
 carousel();
 stuffCarousel();

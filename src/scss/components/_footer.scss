@@ -1,5 +1,62 @@
 .footer {
+  @include make-spacer(pt, 11);
+  @include make-spacer(pb, 5);
+
   width: 100%;
   background-color: var(--almost-black);
   color: var(--white);
+  position: relative;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 3fr) 1fr;
+    grid-column-gap: rem(30px);
+  }
+
+  &__title {
+    @include font-size(26px, 32px);
+
+    color: var(--white);
+    font-weight: 500;
+    font-family: var(--headings-font-family);
+    text-transform: uppercase;
+    padding-bottom: rem(14px);
+    margin-bottom: rem(12px);
+    position: relative;
+
+    &::after {
+      @include size(rem(70px), rem(1px));
+
+      background-color: var(--white);
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: '';
+    }
+  }
+
+  &__item {
+    margin-bottom: rem(14px);
+  }
+
+  &__link {
+    text-transform: uppercase;
+  }
+
+  &__copy {
+    @include flex(space-between, center);
+    @include make-spacer(mt, 12);
+  }
+
+  &__text {
+    @include font-size(12px);
+    @include make-spacer(mb, 0);
+
+    color: #C4C4C4;
+  }
+
+  .pattern {
+    top: rem(-184px);
+    right: rem(134px);
+  }
 }

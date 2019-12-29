@@ -1,12 +1,31 @@
 .teammate {
   @include flex($align-items: center);
 
+  &:not(:last-child) {
+    @include make-spacer(mb, 5);
+  }
+
   &__name {
     @include make-spacer(mb, 0);
+    @include make-spacer(ml, 4);
     @include font-size(26px, 32px);
 
     font-family: var(--headings-font-family);
     text-transform: uppercase;
     font-weight: 500;
+  }
+
+  &__avatar {
+    @include size(100px);
+    @include make-spacer(m, 0);
+    @include flex(center, center);
+
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
   }
 }
